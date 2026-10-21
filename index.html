@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>v1.2 生成视频复核</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <div class="eyebrow">TASK 1.6 · CONTROLLED64 V1.2 · CAMERA AND DEFECT CHECK</div>
+    <h1>v1.2 生成视频复核</h1>
+  </div>
+  <label class="rater">标注者 <input id="rater" placeholder="名字" autocomplete="off"></label>
+  <div class="progress"><span id="progress-text"></span><div class="bar"><div id="bar"></div></div></div>
+</header>
+<main>
+  <nav id="list" aria-label="视频列表"></nav>
+  <section id="stage">
+    <div class="clip-head"><h2 id="clip-title"></h2><span id="saved" class="badge"></span></div>
+    <video id="video" muted loop playsinline preload="auto"></video>
+    <div class="player">
+      <button id="play" title="播放 / 暂停（空格）">暂停</button>
+      <button id="prev-frame" title="上一帧（,）">◀ 帧</button>
+      <button id="next-frame" title="下一帧（.）">帧 ▶</button>
+      <button id="replay">从头播放</button>
+      <span class="speed">倍速
+        <button data-rate="0.25">0.25×</button><button data-rate="0.5">0.5×</button><button data-rate="1">1×</button>
+      </span>
+      <span id="time" class="frame"></span>
+    </div>
+    <div class="prompt"><span>PROMPT / 提示词</span><p id="prompt"></p></div>
+  </section>
+  <aside>
+    <form id="form"></form>
+    <div class="actions">
+      <button type="button" id="back" class="secondary">← 上一段</button>
+      <button type="button" id="save">保存并下一段 →</button>
+    </div>
+    <p id="status" class="status" role="status"></p>
+    <p class="hint">数字键 1–5 回答高亮的题；← → 切换视频；空格播放 / 暂停；, . 逐帧。所有选择自动保存在这个浏览器里。</p>
+  </aside>
+</main>
+<footer>
+  <button id="export">导出全部标签（JSON）</button>
+  <span>标签只保存在这个浏览器里（换浏览器或清除网站数据会丢失）。标完请导出 JSON 交给研究者。</span>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
