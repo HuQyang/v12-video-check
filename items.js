@@ -296,12 +296,6 @@ export const items = [
   "fps": 8.0
  },
  {
-  "id": "r050",
-  "src": "media/r050.mp4",
-  "prompt": "Static shot from a locked-off camera on a tripod; the frame stays completely still. A stone sundial in the center of a paved plaza, with a bronze plaque on the right side of its base and low buildings around the plaza behind it, in clear afternoon sunlight.",
-  "fps": 24.0
- },
- {
   "id": "r051",
   "src": "media/r051.mp4",
   "prompt": "The camera dollies forward toward the planter, travelling a quarter of the way to it, so the planter grows noticeably larger in the frame. A wooden planter box full of herbs in a brick courtyard, with a metal watering can by its right end and a stone archway behind the courtyard, in soft overcast daylight. Smooth, continuous camera movement from the first frame to the last.",
@@ -348,12 +342,6 @@ export const items = [
   "src": "media/r058.mp4",
   "prompt": "The camera dollies forward toward the sundial, travelling halfway to it, so the sundial grows much larger in the frame. A stone sundial in the center of a paved plaza, with a bronze plaque on the right side of its base and low buildings around the plaza behind it, in clear afternoon sunlight. Smooth, continuous camera movement from the first frame to the last.",
   "fps": 8.0
- },
- {
-  "id": "r059",
-  "src": "media/r059.mp4",
-  "prompt": "The camera smoothly orbits a quarter circle, 90 degrees, to the right around the chrome vessel, keeping it centered at the same distance and height, until the vessel's curved spout faces the camera. A polished chrome vessel with a curved spout on its right side, standing on a low plinth, with colored geometric blocks in the studio behind it reflected in its surface, in bright studio light. Smooth, continuous camera movement from the first frame to the last.",
-  "fps": 24.0
  },
  {
   "id": "r060",
